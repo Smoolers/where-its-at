@@ -1,0 +1,23 @@
+.orderpage__totalvalue-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding-bottom: 2rem;
+}
+
+.orderpage__totalvalue-title {
+    font-family: "Fira Sans", sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 19px;
+    opacity: 0.8;
+}
+
+.orderpage__totalvalue-price {
+    font-family: "Fira-Sans", sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 32px;
+    text-shadow: 1px 1px var(--text-pink);
+}

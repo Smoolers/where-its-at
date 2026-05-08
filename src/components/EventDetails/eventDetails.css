@@ -1,0 +1,131 @@
+.eventpage__eventdetails-container {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.eventpage__eventinfo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.4rem;
+}
+
+.eventpage__eventinfo-artist {
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.eventpage__eventinfo-date-time,
+.eventpage__eventinfo-location,
+.eventpage__price,
+.eventpage__decrease,
+.eventpage__tickets,
+.eventpage__increase {
+    font-family: "Fira Sans", sans-serif;
+    color: white;
+}
+
+.eventpage__eventinfo-date-time {
+    color: var(--button);
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.eventpage__eventinfo-location {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+.eventpage__price-tickets-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid var(--text-pink);
+    border-radius: 5px;
+    margin: 0 2rem;
+}
+
+.eventpage__price-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid var(--text-pink);
+    padding: 1rem 0;
+}
+
+.eventpage__price {
+    font-size: 32px;
+    font-weight: 600;
+    text-shadow: 1px 1px var(--text-pink);
+}
+
+.eventpage__dti-container {
+    width: 100%;
+    display: flex;
+}
+
+.eventpage__decrease-container,
+.eventpage__tickets-container,
+.eventpage__increase-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+    user-select: none;
+}
+
+.eventpage__decrease-container .icon__wrapper,
+.eventpage__increase-container .icon__wrapper {
+    align-items: center;
+    justify-content: center;
+}
+
+.eventpage__decrease-container,
+.eventpage__increase-container {
+    cursor: pointer;
+}
+
+.eventpage__decrease,
+.eventpage__increase {
+    width: 20px;
+}
+
+.eventpage__tickets-container {
+    border-left: 1px solid var(--text-pink);
+    border-right: 1px solid var(--text-pink);
+    padding: 0.5rem 1rem;
+}
+
+.eventpage__tickets {
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.eventpage__decrease-container:active,
+.eventpage__increase-container:active {
+    background-color: rgba(100, 90, 160, 0.5);
+}
+
+.eventpage__decrease-container:active img,
+.eventpage__increase-container:active img {
+    filter: invert(0.9);
+}
+
+.eventpage__decrease-container--disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.eventpage__decrease-container--disabled:active {
+    background-color: transparent;
+}
+
+.eventpage__decrease-container--disabled:active img {
+    filter: none;
+}

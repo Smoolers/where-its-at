@@ -1,0 +1,68 @@
+.eventitem__link {
+    text-decoration: none;
+}
+
+.eventitem__wrapper {
+    font-family: "Fira Sans", sans-serif;
+    display: flex;
+    gap: 1.5rem;
+    color: white;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.eventitem__date-container {
+    width: 4.75rem;
+    border: 1px solid white;
+    padding: 1.25rem 1.5rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eventitem__date-day,
+.eventitem__date-month {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.eventitem__info-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.3rem;
+}
+
+.eventitem__artist {
+    font-size: 22px;
+    font-weight: 600;
+    text-shadow: 1px 1px var(--text-pink);
+}
+
+.eventitem__location {
+    font-size: 12px;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 1px;
+}
+
+.eventitem__time {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.eventitem__price {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--button);
+}
+
+.eventitem__time-price-container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    height: 24px;
+    align-items: center;
+}

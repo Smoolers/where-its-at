@@ -1,0 +1,123 @@
+.orderpage__orderitem-container {
+    border: 2px solid var(--text-pink);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1rem 2fr 1rem 1fr;
+    margin-bottom: 1.75rem;
+}
+
+.orderpage__eventinfo-container {
+    grid-column: 1 / 4;
+    /* grid-row: 1; */
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+    gap: 0.25rem;
+    border-right: 1px solid var(--text-pink);
+    border-bottom: 1px solid var(--text-pink);
+}
+
+.orderpage__eventinfo-artist {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.05;
+}
+
+.orderpage__eventinfo-date-time,
+.orderpage__decrease,
+.orderpage__tickets,
+.orderpage__increase {
+    font-family: "Fira Sans", sans-serif;
+    color: white;
+}
+
+.orderpage__eventinfo-date-time {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--button);
+}
+
+.orderpage__deleteicon-container {
+    grid-column: 4 / -1;
+    /* grid-row: 1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--text-pink);
+    cursor: pointer;
+    user-select: none;
+}
+
+.orderpage__deleteicon {
+    width: 26px;
+    filter: invert(1);
+}
+
+.orderpage__decrease-container .icon__wrapper,
+.orderpage__deleteicon-container .icon__wrapper,
+.orderpage__increase-container .icon__wrapper {
+    align-items: center;
+    justify-content: center;
+}
+
+.orderpage__decrease-container,
+.orderpage__tickets-container,
+.orderpage__increase-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+    user-select: none;
+}
+
+.orderpage__decrease-container {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    cursor: pointer;
+}
+
+.orderpage__decrease-container--disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.orderpage__tickets-container {
+    grid-column: 3;
+    grid-row: 2;
+    border-left: 1px solid var(--text-pink);
+    border-right: 1px solid var(--text-pink);
+    padding: 0.5rem 1rem;
+}
+
+.orderpage__increase-container {
+    grid-column: 4 / -1;
+    grid-row: 2;
+    cursor: pointer;
+}
+
+.orderpage__decrease-container:active,
+.orderpage__increase-container:active {
+    background-color: rgba(100, 90, 160, 0.5);
+}
+
+.orderpage__decrease-container:active img,
+.orderpage__increase-container:active img {
+    filter: invert(0.9);
+}
+
+.orderpage__decrease-container--disabled:active {
+    background-color: transparent;
+}
+.orderpage__decrease-container--disabled:active img {
+    filter: none;
+}
+
+.orderpage__decrease,
+.orderpage__increase {
+    width: 20px;
+}
+
+.orderpage__tickets {
+    font-weight: 400;
+    font-size: 28px;
+}

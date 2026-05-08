@@ -1,0 +1,13 @@
+.orderpage__orderitemslist {
+    padding-top: 1rem;
+}
+
+.orderpage__orderitemslist--no-item {
+    font-family: "Fira Sans", sans-serif;
+    color: white;
+    font-size: 28px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    margin-top: 10.75rem;
+}

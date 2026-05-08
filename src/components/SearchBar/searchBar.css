@@ -1,0 +1,33 @@
+.eventspage__searchbar-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0 1rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255, 0.1);
+}
+
+.eventspage__searchbar-icon {
+    width: 20px;
+    flex-shrink: 0;
+    filter: invert(1);
+    opacity: 0.2;
+}
+
+.eventspage__searchbar {
+    color: white;
+    flex: 1;
+    height: 100%;
+    border: none;
+    background: transparent;
+}
+
+/* .eventspage__searchbar-wrapper:focus-within {
+    outline: 2px solid white;
+    outline-offset: 2px;
+} */
+
+.eventspage__searchbar:focus {
+    outline: none;
+}
