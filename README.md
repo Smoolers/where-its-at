@@ -1,3 +1,5 @@
+Where its @ - Martin Hagegård Webb25, april/maj 2026
+
 Externa bibliotek jag använt mig av:
 
 // Swiper - TicketsList.jsx
@@ -62,5 +64,3 @@ UUID passar bra i appen eftersom varje biljett även behöver ett unikt framslum
 Har använt den genom att applicera ett ID på varje biljett.
 
 Jag importerar "v4" (för slumpad ID-generering) under namnet "uuidv4", från uuid, på OrderPage.jsx. Inom "handleOrder" så anropar jag sedan helt enkelt denna funktion, för framslumpning av ett unikt ID som appliceras enskilt till varje skapad biljett. Med ".slice(0, 5)" så kortar jag även ner antalet tecken från 32 st till 5 st. Voila!
-
-Where its @ - Martin Hagegård Webb25, april/maj 2026
