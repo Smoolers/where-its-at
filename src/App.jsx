@@ -43,7 +43,9 @@ const router = createBrowserRouter([
             },
         ],
     },
-]);
+], {
+    basename: import.meta.env.BASE_URL,
+});
 
 function App() {
     const fetchEvents = useEventStore((state) => state.fetchEvents);
